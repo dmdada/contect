@@ -45,7 +45,7 @@ void test()
 			Cls_count(&my_count);
 			break;
 		case PAIXU:
-			Paixu_count(&my_count);
+			Sort_count(&my_count);
 			break;
 		case FILEWRITE:
 			write_file(&my_count);
@@ -373,7 +373,7 @@ void Cls_count(pcon contest)//清空通讯录
 	printf("清空完成\n");
 }
 
-void Paixu_count(pcon contest)//排序通讯录中所有联系人
+void Sort_count(pcon contest)//排序通讯录中所有联系人
 {
 	S tmp = { 0 };
 	int i = 0;
@@ -399,7 +399,7 @@ void Paixu_count(pcon contest)//排序通讯录中所有联系人
 
 }
 
-void free_mem(pcon contest)
+void free_mem(pcon contest)//释放
 {
 	free(contest->human);
 	contest->human = NULL;
