@@ -70,7 +70,7 @@ void test()
 
 }
 
-void write_file(pcon contect)
+void write_file(pcon contect)//写入文件
 {
 	FILE *list;
 	if (contect != NULL)
@@ -110,7 +110,7 @@ void write_file(pcon contect)
 	fclose(list);
 	printf("保存成功\n\n");
 }
-void loadfile(pcon contect)
+void loadfile(pcon contect)//加载联系人
 {
 	check_capacity(contect);
 	int i = 0;
