@@ -213,7 +213,7 @@ void mod_file(pcon contect, char *name, int i)
 	fclose(list);
 }
 
-void init_contest(pcon  contest)
+void init_contest(pcon  contest)//初始化通讯录
 {
 	contest->sz = 0;
 	contest->human = (S*)malloc(sizeof(S)*NUM);
