@@ -1,6 +1,5 @@
 ﻿
 #include "contect.h"
-
 void menu()
 {
 	printf("*******************菜单*******************\n");
